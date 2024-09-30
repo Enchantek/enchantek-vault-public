@@ -1,6 +1,7 @@
 import os
 import yaml
 import shutil
+import re
 
 # recursively loop through the private directory
 # copies .md files with "#publish" tag into public
@@ -8,8 +9,7 @@ import shutil
 
 private_vault = os.getenv('private_vault')
 public_vault = os.getenv('public_vault')
-
-private_vault_path = str(private_vault)
+regex = r'!\[\[(.*?)\]\](.*)\s'
 
 def search_files(private_path, public_path):
     clear_dir(os.path.join(public_path, r"content"))
@@ -21,7 +21,6 @@ def search_files(private_path, public_path):
                     end_path = os.path.join(public_path, r"content", os.path.relpath(file_path, private_path))
                     print(f"Found: {file_path}")
                     copy_file(file_path, end_path)
-            # TODO: check for image/attachment at this line, while it's still in the for loop
 
 def clear_dir(directory):
     if not os.path.exists(directory):
@@ -41,6 +40,20 @@ def copy_file(target_path, destination_path):
         os.makedirs(os.path.dirname(destination_path), exist_ok=True)
         shutil.copy2(target_path, destination_path)
         print(f"Copied to: {destination_path}")
+        # Find attachments
+        with open(target_path, "r", encoding='utf-8') as file:
+            content = file.read()
+            attachments = re.findall("!\[\[(.*?)\]\](.*)\s", content)
+            print(f"Attachments found: {[att[0] for att in attachments]}")
+            for attachment_tuple in attachments:
+                attachment = attachment_tuple[0]
+                for root, dir, files in os.walk(private_vault):
+                    if attachment in files:
+                        attachment_destination_path = os.path.join(os.path.dirname(destination_path), "attachments", attachment)
+                        attachment_target_path = os.path.join(root, attachment)
+                        os.makedirs(os.path.dirname(attachment_destination_path), exist_ok=True)
+                        shutil.copy(attachment_target_path, attachment_destination_path)
+                        print(f"Copied attachment to: {destination_path}")
 
 def has_publish_hashtag(path):
     with open(path, 'r', encoding='iso-8859-1') as file:
