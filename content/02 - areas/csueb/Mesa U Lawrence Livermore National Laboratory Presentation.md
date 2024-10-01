@@ -1,0 +1,50 @@
+---
+created: 2024-10-01T12:26
+modified: 2024-10-01T13:18
+tags:
+  - lecture
+  - csueb
+  - publish
+---
+- One of the speakers graduated from east bay with cs degree
+- LLNL one of 17 DOE national laboratories
+- Has the most PhDs
+	- “Smartest square mile in the silicon valley”
+- Supercomputer facilities
+- Strengthening the nation’s security through science, technology, and engineering
+	- Threat deterrents, climate and energy security, stockpile stewardship
+	- Ex: tracking radioactive fallout from reactors
+	- Livermorium
+- High performance computing 
+- Simulator disasters, etc., on bigger machines
+- You don’t have to be a computer scientist to work at the lab, other types of work
+- Epidemic tracking, nano manufacturing
+- Next few years, diffusion, a way to output more energy than what you’re putting in
+- National Ignition Facility: researches diffusion
+- Site 300
+- Most of the facilities’ research can’t be done anywhere else
+- Thousands of millions of simulations to do a shot
+- Covid research: if you make a vaccine what are you really protecting against? Not everybody gets sick
+- LLNL is home to four of the world’s most powerful supercomputers of top 500
+- Sierra is #3, Lassen #26, Ruby #123, Magma #143
+- “Competition drives innovation” perusing to get better
+- Used not only for pure computing, simulation, but the feedback from the simulations and experiments are fed back to the computer
+- Looking for people to get nerds
+- When you get hired: you aren’t just hired for this one specific thing, you can shift around
+	- You can walk up to boss tomorrow, ask for something slightly different, get trained, get the new job and you still keep your seniority, etc.
+	- Encouraged
+	- You still have your primary jobs, computing, etc.
+	- When a project is over, why would you fire people, instead they find new cool projects to work
+- Small budget for quantum computing, it’s something they’re looking at but took a bit of work initially to get moving
+- 200 internships in just computing every year
+- Almost 100 between internships and people they host
+- Resumes:
+	- Experience would probably be at the bottom: because they know that students are in school
+	- They aren’t looking for people with years of experience
+	- Stuff like raspberry pi server for Minecraft
+	- Projects: use them as an opportunity to show your *interest* in learning how to do things
+	- Not really about the quantity of the projects but the quality
+	- Interest: complexity isn’t quality
+	- **Learning how to learn**
+	- I went out to learn how to do this thing
+	- You could write code that isn’t really optimized using something you never really worked on before, but they would like it because it’s something you were interested in learning and went out of your way for
