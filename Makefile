@@ -18,7 +18,7 @@ build: ## Build the website without serving
 deploy: publish sync ## Publish notes and sync to GitHub
 	@echo "Deployment complete. Remember to push changes to GitHub if needed."
 
-all: ## Publishs notes from private vault to public vault and syncs
+all: ## Publishes notes from private vault to public vault and syncs
 	@echo "Starting publish process..."
 	@make publish
 	@echo "Publishing complete. Starting sync process..."
