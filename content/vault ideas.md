@@ -3,7 +3,7 @@ tags:
   - obsidian
   - publish
 created: 2024-07-09T02:13
-modified: 2024-09-30T12:42
+modified: 2024-09-30T04:45
 ---
 - [ ] youtube video review/notes/ideas/thought process
       ex: watching [this video](https://www.youtube.com/watch?v=bPv5pb7AcYs&ab_channel=GrantCollins) `I Played HackTheBox For 30 Days - Here's What I Learned`
