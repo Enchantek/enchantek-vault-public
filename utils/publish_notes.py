@@ -52,7 +52,7 @@ def copy_file(target_path, destination_path):
                         attachment_destination_path = os.path.join(os.path.dirname(destination_path), "attachments", attachment)
                         attachment_target_path = os.path.join(root, attachment)
                         os.makedirs(os.path.dirname(attachment_destination_path), exist_ok=True)
-                        shutil.copy(attachment_target_path, attachment_destination_path)
+                        shutil.copy2(attachment_target_path, attachment_destination_path)
                         print(f"Copied attachment to: {destination_path}")
 
 def has_publish_hashtag(path):
