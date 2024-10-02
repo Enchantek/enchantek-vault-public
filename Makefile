@@ -9,7 +9,7 @@ publish: ## Copy notes from private vault to public vault
 sync: ## Sync local public vault to GitHub repository
 	npx quartz sync
 
-preview: ## Build and serve a local preview of the website
+preview: publish ## Build and serve a local preview of the website
 	npx quartz build --serve
 
 build: ## Build the website without serving
@@ -18,8 +18,4 @@ build: ## Build the website without serving
 deploy: publish sync ## Publish notes and sync to GitHub
 	@echo "Deployment complete. Remember to push changes to GitHub if needed."
 
-all: ## Publishes notes from private vault to public vault and syncs
-	@echo "Starting publish process..."
-	@make publish
-	@echo "Publishing complete. Starting sync process..."
-	@make sync
+all: publish sync ## Publishes notes from private vault to public vault and syncs
