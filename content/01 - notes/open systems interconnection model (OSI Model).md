@@ -4,9 +4,11 @@ tags:
   - compsci/networks
   - publish
 created: 2024-09-17T16:27
-modified: 2024-10-01T16:45
+modified: 2024-10-08T16:31
 cssclasses:
   - center-tables
+aliases:
+  - OSI Model
 ---
 The OSI model is a conceptual framework used to describe how data communications occur between devices in a network. It divides network communication into seven abstraction layers. Each layer has specific functions and interfaces with the layers above and below it.
 
